@@ -1,0 +1,7 @@
+- Best cell on **validation** chrF: **wmc** (val chrF 9.62, val BLEU 1.36).
+- Test scores (reported once): vanilla: BLEU 1.19, chrF 9.47, ppl 30.59; cifg: BLEU 0.68, chrF 8.5, ppl 33.79; wmc: BLEU 1.15, chrF 10.22, ppl 29.95.
+- Recurrent parameters: vanilla: 1,050,624; cifg: 787,968; wmc: 1,443,840.
+- Training speed (s/epoch): vanilla: 2.8; cifg: 2.2; wmc: 3.0.
+- cifg vs vanilla: mean sentence-chrF difference -0.77, 95% paired-bootstrap CI [-1.16, -0.39] → excludes 0.
+- wmc vs vanilla: mean sentence-chrF difference +0.74, 95% paired-bootstrap CI [0.32, 1.14] → excludes 0.
+- All results come from a single seed; differences smaller than the bootstrap interval should not be interpreted as a ranking.

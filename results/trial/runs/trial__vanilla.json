@@ -1,0 +1,117 @@
+{
+  "run_name": "trial__vanilla",
+  "group": "trial",
+  "cell": "vanilla",
+  "config": {
+    "run_name": "trial__vanilla",
+    "cell": "vanilla",
+    "group": "trial",
+    "emb": 256,
+    "hidden": 256,
+    "layers": 1,
+    "proj": null,
+    "dropout": 0.3,
+    "optimizer": "adam",
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "batch_size": 128,
+    "epochs": 1,
+    "patience": 3,
+    "clip": 1.0,
+    "teacher_forcing": 1.0,
+    "init": "default",
+    "forget_bias": 0.0,
+    "max_decode_len": 50,
+    "seed": 42,
+    "max_train_batches": 40,
+    "notes": "",
+    "extra": {}
+  },
+  "params": {
+    "total": 3894892,
+    "encoder_recurrent": 525312,
+    "decoder_recurrent": 525312,
+    "embeddings": 1763840,
+    "output_layer": 1080428
+  },
+  "best_epoch": 1,
+  "epochs_run": 1,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 6.0838387370109555,
+      "val_loss": 4.879909819800839,
+      "val_ppl": 131.61879394157035,
+      "val_token_acc": 0.2871491469455146,
+      "grad_norm": 0.5677812695503235,
+      "epoch_seconds": 1.0812404155731201
+    }
+  ],
+  "train_seconds": 1.1004700660705566,
+  "seconds_per_epoch": 1.0812404155731201,
+  "val": {
+    "loss": 4.879909819800839,
+    "ppl": 131.61879394157035,
+    "token_acc": 0.2871491469455146,
+    "bleu": 0.0,
+    "chrf": 1.8592348142076578,
+    "bleu_bp": 0.27226023261427135,
+    "bleu_precisions": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "test": {
+    "loss": 4.854116163196802,
+    "ppl": 128.26727376364641,
+    "token_acc": 0.2863932645301467,
+    "bleu": 0.0,
+    "chrf": 1.8671985628986267,
+    "bleu_bp": 0.2600697967911291,
+    "bleu_precisions": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "decode_seconds": 0.06399345397949219,
+    "sentences_per_second": 19798.900062591278
+  },
+  "data_config": {
+    "target_script": "latin",
+    "max_pairs": null,
+    "val_frac": 0.1,
+    "test_frac": 0.1,
+    "seed": 42,
+    "min_freq": 2,
+    "max_len": 50,
+    "darija_lowercase": false
+  },
+  "data_report": {
+    "rows_raw": 87785,
+    "missing_source": 75042,
+    "missing_target": 0,
+    "empty_after_strip": 0,
+    "exact_duplicate_pairs_removed": 74,
+    "rows_clean": 12669,
+    "columns_used": {
+      "source": "eng",
+      "target": "darija"
+    },
+    "split_sizes": {
+      "train": 10135,
+      "val": 1267,
+      "test": 1267
+    },
+    "src_vocab": 2686,
+    "tgt_vocab": 4204
+  },
+  "env": {
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "device": "Tesla T4"
+  }
+}

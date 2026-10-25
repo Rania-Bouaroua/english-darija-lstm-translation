@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-25 20:38",
+  "mode": "full",
+  "seed": 42,
+  "max_pairs_used": null,
+  "data_config": {
+    "target_script": "latin",
+    "max_pairs": null,
+    "val_frac": 0.1,
+    "test_frac": 0.1,
+    "seed": 42,
+    "min_freq": 2,
+    "max_len": 50,
+    "darija_lowercase": false
+  },
+  "data_report": {
+    "rows_raw": 87785,
+    "missing_source": 75042,
+    "missing_target": 0,
+    "empty_after_strip": 0,
+    "exact_duplicate_pairs_removed": 74,
+    "rows_clean": 12669,
+    "columns_used": {
+      "source": "eng",
+      "target": "darija"
+    },
+    "split_sizes": {
+      "train": 10135,
+      "val": 1267,
+      "test": 1267
+    },
+    "src_vocab": 2686,
+    "tgt_vocab": 4204
+  },
+  "load_info": {
+    "source": "imomayiz/darija-english/sentences",
+    "splits": [
+      "sentences"
+    ],
+    "used_split": "sentences",
+    "rows": 87785,
+    "columns": [
+      "darija",
+      "eng",
+      "darija_ar"
+    ]
+  },
+  "base_config": {
+    "emb": 256,
+    "hidden": 256,
+    "layers": 1,
+    "dropout": 0.3,
+    "optimizer": "adam",
+    "lr": 0.001,
+    "batch_size": 128,
+    "epochs": 15,
+    "patience": 3,
+    "clip": 1.0,
+    "teacher_forcing": 1.0,
+    "init": "default",
+    "forget_bias": 0.0,
+    "seed": 42
+  },
+  "python": "3.13.16",
+  "torch": "2.11.0+cu130",
+  "gpu": "Tesla T4",
+  "hparam_runs_not_started": []
+}

@@ -1,0 +1,292 @@
+{
+  "cleaning": {
+    "rows_raw": 87785,
+    "missing_source": 75042,
+    "missing_target": 0,
+    "empty_after_strip": 0,
+    "exact_duplicate_pairs_removed": 74,
+    "rows_clean": 12669,
+    "columns_used": {
+      "source": "eng",
+      "target": "darija"
+    },
+    "split_sizes": {
+      "train": 10135,
+      "val": 1267,
+      "test": 1267
+    },
+    "src_vocab": 2686,
+    "tgt_vocab": 4204
+  },
+  "pairs_after_cleaning": 12669,
+  "split_sizes": {
+    "train": 10135,
+    "val": 1267,
+    "test": 1267
+  },
+  "unique_english_sources": 11172,
+  "english_sources_with_several_translations": 864,
+  "pairs_whose_source_has_several_translations": 2361,
+  "max_translations_for_one_source": 19,
+  "english_len_tokens": {
+    "mean": 7.043216576221016,
+    "median": 6.0,
+    "p95": 15.0,
+    "max": 37
+  },
+  "darija_len_tokens": {
+    "mean": 4.784410458806118,
+    "median": 4.0,
+    "p95": 11.0,
+    "max": 30
+  },
+  "length_correlation_pearson": 0.8864792116553517,
+  "share_target_truncated_at_max_len": 0.0,
+  "vocab_types_train": {
+    "english": 4922,
+    "darija": 13432,
+    "darija_if_lowercased": 13052
+  },
+  "vocab_after_min_freq": {
+    "english": 2686,
+    "darija": 4204
+  },
+  "hapax_share_of_types": {
+    "english": 0.4550995530272247,
+    "darija": 0.6873138773079214
+  },
+  "oov_token_rate": {
+    "val_english": 0.05751960895759918,
+    "test_english": 0.0550376277659216,
+    "val_darija": 0.2627895350774871,
+    "test_darija": 0.25832376578645233
+  },
+  "script": {
+    "target_with_latin_letters": 1.0,
+    "target_with_arabic_letters": 0.0,
+    "source_with_arabic_letters": 0.0,
+    "darija_tokens_with_digit_letters_(3,7,9...)": 0.25246442565477417
+  },
+  "noise_indicators": {
+    "pairs_source_equals_target": 19,
+    "pairs_length_ratio_gt_3_or_lt_0.33": 30,
+    "single_token_targets": 752
+  },
+  "top_darija_tokens": [
+    [
+      "?",
+      1926
+    ],
+    [
+      ",",
+      1237
+    ],
+    [
+      ".",
+      1066
+    ],
+    [
+      "wach",
+      696
+    ],
+    [
+      "o",
+      532
+    ],
+    [
+      "chi",
+      526
+    ],
+    [
+      "!",
+      483
+    ],
+    [
+      "ana",
+      469
+    ],
+    [
+      "f",
+      463
+    ],
+    [
+      "dyal",
+      429
+    ],
+    [
+      "3la",
+      427
+    ],
+    [
+      "ghadi",
+      418
+    ],
+    [
+      "l",
+      368
+    ],
+    [
+      "mn",
+      357
+    ],
+    [
+      "hadchi",
+      303
+    ],
+    [
+      "walakin",
+      289
+    ],
+    [
+      "had",
+      247
+    ],
+    [
+      "bach",
+      226
+    ],
+    [
+      "dial",
+      215
+    ],
+    [
+      "li",
+      207
+    ],
+    [
+      "bzaf",
+      202
+    ],
+    [
+      "nta",
+      198
+    ],
+    [
+      "daba",
+      188
+    ],
+    [
+      "rah",
+      186
+    ],
+    [
+      "m3a",
+      186
+    ]
+  ],
+  "top_english_tokens": [
+    [
+      "i",
+      3169
+    ],
+    [
+      "'",
+      3106
+    ],
+    [
+      "you",
+      2522
+    ],
+    [
+      "the",
+      2087
+    ],
+    [
+      "?",
+      2070
+    ],
+    [
+      "to",
+      1743
+    ],
+    [
+      "a",
+      1609
+    ],
+    [
+      ",",
+      1487
+    ],
+    [
+      ".",
+      1366
+    ],
+    [
+      "it",
+      1136
+    ],
+    [
+      "s",
+      1041
+    ],
+    [
+      "is",
+      1016
+    ],
+    [
+      "do",
+      744
+    ],
+    [
+      "t",
+      740
+    ],
+    [
+      "have",
+      722
+    ],
+    [
+      "!",
+      671
+    ],
+    [
+      "and",
+      647
+    ],
+    [
+      "in",
+      641
+    ],
+    [
+      "of",
+      614
+    ],
+    [
+      "we",
+      596
+    ],
+    [
+      "that",
+      591
+    ],
+    [
+      "what",
+      587
+    ],
+    [
+      "m",
+      572
+    ],
+    [
+      "he",
+      566
+    ],
+    [
+      "me",
+      565
+    ]
+  ],
+  "raw_profile": {
+    "rows": 87785,
+    "columns": [
+      "darija",
+      "eng",
+      "darija_ar"
+    ],
+    "missing_per_column": {
+      "darija": 0,
+      "eng": 75042,
+      "darija_ar": 0
+    }
+  }
+}

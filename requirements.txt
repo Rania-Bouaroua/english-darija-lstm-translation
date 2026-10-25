@@ -1,0 +1,8 @@
+torch
+numpy
+pandas
+datasets
+matplotlib
+sacrebleu
+tqdm
+pytest
